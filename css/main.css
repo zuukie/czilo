@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+body nav {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  color: #FFFFFF;
+  background-color: #14213d;
+  z-index: 1000;
+}
+body nav .content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+body nav .content img {
+  cursor: pointer;
+}
+body nav .content i {
+  position: absolute;
+  right: 30px;
+}
+body nav .content ul {
+  visibility: hidden;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+body nav .content ul li {
+  margin: 0 20px;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+body nav .content ul li:hover {
+  color: #FCA311;
+}
+body header {
+  position: relative;
+  top: 50px;
+  height: 300px;
+  width: 100%;
+  background-image: url("../img/headerbg.png");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 50;
+}
+body header .content img {
+  width: 80px;
+  margin-bottom: 5px;
+}
+body header .content h1 {
+  min-width: 240px;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+body header .content h2 {
+  font-size: 12px;
+}
+body header .shadow {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 65%;
+  z-index: 10;
+}
+body .special-info {
+  margin-top: 70px;
+}
+body .special-info img {
+  width: 100%;
+}
+body main {
+  position: relative;
+  min-height: 500px;
+  padding: 20px 0;
+}
+body main .sport,
+body main .news,
+body main .achievements {
+  margin-bottom: 25px;
+}
+body main .sport .cards,
+body main .news .cards,
+body main .achievements .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+body main .sport .cards .card,
+body main .news .cards .card,
+body main .achievements .cards .card {
+  margin: 10px 7px 0 0;
+}
+body main div.line {
+  background-color: #FCA311;
+}
+body main div.line .text {
+  width: 50px;
+  padding: 10px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+body main div.line .text h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+body main div.line .text i {
+  margin-left: 10px;
+}
+body main div.line .text:hover {
+  color: #E5E5E5;
+}
+body main .app {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 70px 0px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+body main .app .left p {
+  width: 100%;
+}
+body main .app .left .links {
+  display: flex;
+  flex-direction: column;
+}
+body main .app .left .links .play {
+  margin-top: -20px;
+  margin-left: -10px;
+}
+body main .app .right img {
+  margin-bottom: 20px;
+  width: 70px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px black;
+}
+body footer {
+  padding: 25px;
+  color: #FFFFFF;
+  background-color: #14213d;
+}
+body footer .up {
+  display: flex;
+  flex-direction: column;
+}
+body footer .up div {
+  width: 50%;
+}
+body footer .up h4 {
+  font-size: 1.4rem;
+}
+body footer .up ul {
+  list-style: none;
+}
+body footer .up ul li {
+  width: 200px;
+  margin-left: -32px;
+  text-decoration: underline;
+}
+body footer .up ul li a {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+body footer .up ul a:hover,
+body footer .up ul li:hover {
+  text-decoration: none;
+}
+body footer .copyright {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  body header .content h1 {
+    font-size: 24px;
+  }
+  body header .content h2 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  body footer .up {
+    display: flex;
+    flex-direction: row;
+  }
+  body footer .up div {
+    width: 50%;
+  }
+  body footer .up h4 {
+    font-size: 1.4rem;
+  }
+  body footer .up ul {
+    list-style: none;
+  }
+  body footer .up ul li {
+    width: 200px;
+    margin-left: -32px;
+    text-decoration: underline;
+  }
+  body footer .up ul li a {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  body footer .up ul a:hover,
+  body footer .up ul li:hover {
+    text-decoration: none;
+  }
+  body footer .copyright {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  body header {
+    height: 400px;
+  }
+  body header .content h1 {
+    font-size: 32px;
+  }
+  body header .content h2 {
+    font-size: 20px;
+  }
+  body header .content img {
+    width: 100px;
+  }
+  body main .app {
+    display: flex;
+    flex-direction: row;
+  }
+  body main .app .left p {
+    width: 550px;
+  }
+  body main .app .left .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body main .app .left .links .play {
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  body main .app .right img {
+    position: absolute;
+    width: 200px;
+    top: 20px;
+    right: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px black;
+  }
+}
+@media (min-width: 1200px) {
+  body nav .content ul {
+    visibility: visible;
+  }
+  body nav .content i {
+    visibility: hidden;
+  }
+  body header .content h1 {
+    font-size: 35px;
+  }
+  body header .content h2 {
+    font-size: 22px;
+  }
+  body header .content img {
+    width: 100px;
+  }
+  body main .app {
+    display: flex;
+    flex-direction: row;
+  }
+  body main .app .left p {
+    width: 550px;
+  }
+  body main .app .left .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body main .app .left .links .play {
+    margin-top: 0;
+    margin-left: 5px;
+  }
+  body main .app .right img {
+    position: absolute;
+    width: 300px;
+    top: 20px;
+    right: 100px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px black;
+  }
+}/*# sourceMappingURL=main.css.map */
